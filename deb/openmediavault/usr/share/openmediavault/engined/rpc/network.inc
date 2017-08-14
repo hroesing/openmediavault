@@ -784,7 +784,7 @@ class OMVRpcServiceNetwork extends OMVRpcServiceAbstract {
                   "uuid":{'.$GLOBALS['OMV_JSONSCHEMA_UUID_UNDEFINED'].'},
 				  '.$GLOBALS['OMV_JSONSCHEMA_NETWORK_INTERFACE_GENERIC'].',
 				  "slaves":{"type":"string","format":"regex","pattern":'.
-					'"\/^((eth|wlan)\\\d+,)*(eth|wlan)\\\d+$\/i"},
+					'"\/^((eth|wlan)\\\d+(\\\.\\\d+)?,)*(eth|wlan)\\\d+(\\\.\\\d+)?$\/i"},
 				  "bondprimary":{"type":"string"},
 				  "bondmode":{"type":"integer","enum":[0,1,2,3,4,5,6]},
 				  "bondmiimon":{"type":"integer","minimum":0},
